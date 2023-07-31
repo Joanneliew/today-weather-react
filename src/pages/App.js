@@ -275,7 +275,7 @@ function App() {
                     </div>
                   ))
                 }
-                <div className="text-end text-s color-secondary mt-2">Showing lastest {historyList.length > 5? hisLen : historyList.length} history record(s).</div>
+                <div className="text-end text-s color-secondary mt-2">Showing lastest {historyList.length > 5? hisLen : historyList.length} history record(s)</div>
               </>
               :
               <>
