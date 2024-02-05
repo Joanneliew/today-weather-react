@@ -6,7 +6,7 @@ import loadIcon from '../utils/loadIcon.js';
 // import Spinner from '../components/Spinner.js';
 
 function App() {
-  const [isCallingAPI, setCallingAPI] = useState(false)
+  // const [isCallingAPI, setCallingAPI] = useState(false)
   const [data, setData] = useState(null)
   const defaultFilter = {
     country: "Singapore", //default input to Singapore
@@ -57,7 +57,7 @@ function App() {
 
   const getData = async (country, init) => {
     if(!country) return
-    setCallingAPI(true)
+    // setCallingAPI(true)
 
     if(country){
       // change country input to new value from history
@@ -125,12 +125,12 @@ function App() {
               historyList.unshift(result)
               localStorage.setItem('historyList',JSON.stringify(historyList))
             }
-            setCallingAPI(false)
+            // setCallingAPI(false)
             return
           }
           setData(null);
           setErr(result.message || 'Error')
-          setCallingAPI(false)
+          // setCallingAPI(false)
         },
         (error) => {
           console.log(error)
