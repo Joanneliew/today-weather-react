@@ -1,0 +1,64 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1rem 0 1.5rem;
+  min-height: 100vh;
+  background-image: url("../img/bg-light.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  font-size: 1rem; //16px
+  color: #000;
+
+  .body {
+    width: 40rem;
+    max-width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.card {
+  position: relative;
+  flex: 1;
+  background: linear-gradient(180deg, rgba(255,255,255,.5) 0%, rgba(255,255,255,.2) 100%);    padding: 2rem;
+  border-top-left-radius: 2.5rem;
+  border-top-right-radius: 2.5rem;
+  border: 1px solid rgba(255,255,255,.5);
+  border-width: 1px 1px 0 1px;
+  margin-top: 6rem;
+
+  .tempImg {
+    position: absolute;
+    width: 45%;
+    right: 0rem;
+    top: 0;
+    transform: translateY(-33%);
+  }
+
+  .content {
+    position: relative;
+  }
+
+  .tempNum {    
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 1;
+  }
+}
+
+.card_secondary {
+  background: rgba(255,255,255,.2);
+  border-radius: 1.5rem;
+  padding: 1.2rem;
+}
+
+.history_item {
+  margin-top: 1.2rem;
+  padding: 1rem;
+  background: rgba(255,255,255,.4);
+  border-radius: 1rem;
+}
